@@ -1,0 +1,30 @@
+package ARRAY;
+
+
+import java.util.*;
+
+public class pairSumEqualstoKey {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the arr Size:");
+        int m=sc.nextInt();
+        int[]a=new int[m];
+        int key=10;
+        boolean found=false;
+        System.out.println("Enter the matrix elements:");
+        for(int i=0;i<m;i++){
+                a[i]=sc.nextInt();
+
+
+        }
+        for(int i=0;i<m;i++){
+            for(int j=1;j<m;j++){
+                if(a[i]+a[j]==key){
+                    found=true;
+                }
+            }
+        }
+        System.out.print("found:"+found);
+
+    }
+}
